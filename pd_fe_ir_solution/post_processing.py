@@ -5,16 +5,6 @@ from scipy.interpolate import griddata, interp1d
 from dataclasses import dataclass, field
 
 
-@dataclass
-class Sky:
-    area: float = 0.0
-    circumference: float = 0.0
-    circularity: float = 0.0
-    average_radius: float = 0.0
-    rho_list: list[float] = field(default_factory=list)
-    circ_grid: npt.NDArray = field(default_factory=lambda: np.array([]))
-
-
 def skyrmion_radius(
     positions: npt.NDArray,
     spins: npt.NDArray,
