@@ -1,3 +1,5 @@
+*.png
+
 # Spirit specific
 Log*.txt
 *.ovf
